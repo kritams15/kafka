@@ -1,0 +1,16 @@
+package com.consumer.consumer;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import java.util.function.Consumer;
+
+@Configuration
+public class KafkaConsumerNew {
+    @Bean
+    public Consumer<RiderLocation> riderLocation(){
+        return location ->{
+            System.out.println("messaged received"+location.getRiderId());
+        };
+    }
+}
