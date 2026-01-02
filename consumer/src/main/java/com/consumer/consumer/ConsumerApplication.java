@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //commit in branch
 //commit is demo branch
 // dif
+//difference changes check
 public class ConsumerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ConsumerApplication.class, args);
